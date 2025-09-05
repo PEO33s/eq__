@@ -3,25 +3,31 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
       background-color: transparent;
       font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
       color: #fff;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+      overflow-x: hidden;
+      overflow-y: auto;
+      min-height: 100vh;
+    }
+
+    .wrapper {
       display: flex;
-      align-items: center;
       justify-content: center;
-      height: 100vh;
-      overflow: auto;
+      padding: 40px 20px;
+      box-sizing: border-box;
     }
 
     .container {
       background: rgba(20, 20, 20, 0.6);
       padding: 32px;
+      border-radius: 20px;
       max-width: 720px;
-      width: 90%;
+      width: 100%;
       box-shadow: 0 0 30px rgba(0,0,0,0.8);
       backdrop-filter: blur(8px);
       animation: fadeIn 1.2s ease-out;
@@ -80,27 +86,29 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <h2>Earthquake Safety</h2>
+  <div class="wrapper">
+    <div class="container">
+      <h2>Earthquake Safety</h2>
 
-    <div class="section">
-      <h3>Indoors</h3>
-      <p>During an earthquake, drop, cover, and hold on. Avoid windows, heavy furniture, and outside walls. Don't panic, don't run outside, and don't use elevators.</p>
-    </div>
+      <div class="section">
+        <h3>🏠 Indoors</h3>
+        <p>During an earthquake, drop, cover, and hold on. Avoid windows, heavy furniture, and outside walls. Don't panic, don't run outside, and don't use elevators.</p>
+      </div>
 
-    <div class="section">
-      <h3>Outdoors</h3>
-      <p>Move to an open, safe area away from hazards like buildings and power lines.</p>
-    </div>
+      <div class="section">
+        <h3>🌳 Outdoors</h3>
+        <p>Move to an open, safe area away from hazards like buildings and power lines.</p>
+      </div>
 
-    <div class="section">
-      <h3>Driving</h3>
-      <p>Pull over to a clear spot and stay in the car.</p>
-    </div>
+      <div class="section">
+        <h3>🚗 Driving</h3>
+        <p>Pull over to a clear spot and stay in the car.</p>
+      </div>
 
-    <div class="section">
-      <h3>Trapped</h3>
-      <p>Don't light matches. Cover your mouth and tap to signal for help.</p>
+      <div class="section">
+        <h3>🆘 Trapped</h3>
+        <p>Don't light matches. Cover your mouth and tap to signal for help.</p>
+      </div>
     </div>
   </div>
 </body>
